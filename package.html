@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="package.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+</head>
+<body>  
+    <div class="package-container">
+        <h1>Book Your Package</h1>
+        <form id="package-form">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name:" required>
+                <span class="error-message" id="name-error"></span>
+            </div>
+
+            <div class="package-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+                <span class="error-message" id="age-error"></span>
+            </div>
+
+            <div class="school-group">
+                <label>Type of School</label>
+                <div>
+                    <input type="radio" id="primary-school" name="school-type" value="Primary School" required>
+                    <label for="primary school">Primary School</label>
+                </div>
+                <div>
+                    <input type="radio" id="secondary-school" name="school-type" value="Secondary School">
+                    <label for="secondary school">Secondary School</label>
+                </div>
+                <span class="error-message" id="schooltype-error"></span>
+            </div>
+            
+
+            <div class="package-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div class="pacakage-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                <span class="error-message" id="phone-error"></span>
+            </div>
+
+            <div class="package-group">
+                <label for="package">Package Number:</label>
+                <textarea id="package" name="package" placeholder="Enter your package number:" required></textarea>
+                <span class="error-message" id="package-error"></span>
+            </div>
+
+            <div class="package-group">
+                <label>Payment Method:</label>
+                <div>
+                    <input type="radio" id="credit-card" name="payment-method" value="Credit Card" required>
+                    <label for="credit-card">Credit Card</label>
+                </div>
+                <div>
+                    <input type="radio" id="banking" name="payment-method" value="Online Transfer">
+                    <label for="banking">Online Transfer</label>
+                </div>
+                <span class="error-message" id="payment-error"></span>
+            </div>
+            <button type='submit'>Place Order</button>
+        </form>
+    </div>
+    <script src="successpackage.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <link rel="stylesheet" href="successpackage.css">
+</head>
+<body>
+    <div class="booking-success">
+        <h1>Success!</h1>
+        <p id="package-details">Your package details will appear here.</p>
+        <button onclick="goBack()">Back to Home</button>
+    </div>
+    <script>
+        // Extract URL parameters
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Display package details
+        document.addEventListener("DOMContentLoaded", () => {
+            const packageDetails = getQueryParam("package");
+            const packageDetailsElement = document.getElementById("package-details");
+
+            if (packageDetails) {
+                packageDetailsElement.textContent = packageDetails;
+            } else {
+                packageDetailsElement.textContent = "No package details found.";
+            }
+        });
+
+        function goBack() {
+            window.location.href = "homepage.html"; // Redirect to the form page
+        }
+    </script>
+</body>
+</html>
+

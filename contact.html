@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            padding: 3rem;
+            max-width: 800px;
+            margin: 3rem auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-family: 'Lobster', cursive;
+            color: #FFB6C1; 
+            text-align: center;
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            margin-top: 2rem;
+        }
+
+        label {
+            display: block;
+            margin: 0.5rem 0 0.25rem;
+            font-weight: bold;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #A9E5A6; 
+            border-radius: 10px;
+            background-color: #E8F9E9; 
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+            background-color: #DFF7E3; 
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #FFB6C1; 
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #FF99A2; 
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 2rem;
+            background-color: #A8D5BA; 
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #C4E1D9; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+
+            <label for="email">E-MAIL</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="message">MESSAGE</label>
+            <textarea id="message" name="message" placeholder="Write your complaint or something" rows="5" required></textarea>
+
+            <button type="submit">SEND MESSAGE</button>
+        </form>
+        <a href="Homepage.html">Back to Home</a>
+    </div>
+
+    <script src="contact_Script.js"></script>
+</body>
+</html>
